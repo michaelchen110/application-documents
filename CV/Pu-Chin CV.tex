@@ -1,0 +1,251 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{fontawesome}
+\usepackage{balance}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=20mm,
+ right=20mm,
+ top=5mm,
+ bottom=20mm,
+ }
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+% \usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+\usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0,0} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+\vspace*{-2.5cm}
+\par{\centering{\Huge Pu-Chin \textsc{Chen}}\par} % Your name
+% \section{Personal Data}
+
+% \begin{tabular}{rl}
+\centering{
+6F., No.15, Aly. 46, Ln. 553, Sec. 4, Zhongxiao E. Rd., Taipei City, Taiwan \\
+\href{mailto:puching110@gmail.com}{puching110@gmail.com}\hspace{5 mm} +(886) 921 448810 \hspace{10 mm} \href{https://github.com/michaelchen110}{\faGithub \hspace{1 mm} michaelchen110}}
+
+
+% \textsc{Research Interests:} &  Machine Learning,  Human Computer Interaction, \\
+% & Statistics, UI/UX, Web development\\
+
+% \end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl}	
+\textsc{June} 2015& \href{https://www.csie.ntu.edu.tw}{Undergraduate Degree in \textsc{}\textsc{Computer Science \& Information Engineering (CSIE)}} \\
+&\normalsize\textbf{\href{https://www.csie.ntu.edu.tw}{National Taiwan University (NTU)}}, Taiwan\hfill \normalsize \textsc{GPA}: 3.14/4.0 \\
+% \textsc{Last two years GPA}: 3.47/4.0\\
+&\\
+
+\textsc{Aug} 2013& Summer Session\\
+&\normalsize\textbf{The University of California}, Berkeley\hfill \normalsize \textsc{GPA}: 3.57/4.0 \\
+&\\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{11cm}}
+
+\textsc{Mar 2015-Jun 2015} & \emph{Teaching Assistant}\\
+& Data Structure and Algorithm, \textsc{Required Course}, NTU-CSIE \\ 
+& \footnotesize{Organised and conducted two workshops (\textit{linux shell script, git,} and \textit{basic workstation knowledge}) for a 200+ enrolled students class, and coached students every week}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Dec 2014-Feb 2015} & \emph{Project Manager}\\
+& Official Website Development, \textsc{Student Congress}, NTU \emph{}\\
+& \footnotesize{Lead a 5-people team to build the 1st official website for NTU Student Congress}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Oct 2014-Feb 2015} & \emph{Back-End Engineer}\\ 
+& \textsc{Fountain Inc}, Taipei \emph{}\\
+& \footnotesize{Built the NoSQL database with MongoDB and communicated with front-end processes for an android e-commerce online store.}\\
+\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE 
+%----------------------------------------------------------------------------------------
+% \vfill
+\section{Research Experience}
+
+\begin{tabular}{r|p{11cm}}
+
+\textsc{Feb 2015} & \emph{Treehacks, Stanford, CA}\\ 
+& \href{https://www.youtube.com/watch?v=jxsZaQ6PcXU}{\emph{Research Topic: Operating Drones by Gesture Recongnition}}\\
+& \footnotesize{
+\begin{itemize}
+\item Built the system connected Microsoft Kinect v2.0 and AR.Drone 2.0 by Processing 
+\item Stablized the drone by automation control techniques
+\item Implemented high accurate gesture recognition by k-means clustering
+\end{itemize}} \\
+\multicolumn{2}{c}{} \\
+
+\textsc{Sep 2014-Jan 2015} & \emph{Designing for User Experience , NTU, Taipei, Taiwan}\\ 
+& \emph{Research Topic: A Supporting System to Bridge Drug Addicts and Priests}\\
+& \footnotesize{
+\begin{itemize}
+\item Designed a system offering drug addicts a similar function to priests during their rehabilitation period, such as broadcasts, including personal questions, and voice memos.
+\end{itemize}} \\
+\multicolumn{2}{c}{} \\
+
+\textsc{Jul 2014-Sep 2014} & \emph{Mobile and Human-Computer Interaction Laboratory, NTU, Taipei, Taiwan}\\ 
+& \emph{Research Topic: User Defined Gesture for Flying Objects}\\
+& \footnotesize{
+\begin{itemize}
+\item Research with Chiuan-Wang, Wilson Huang, and Jacky Chen
+\item Presented a a study of interaction between flying object and human gesture, that is leading to a user-defined gesture set based on participants’ agreement over 176 gestures
+\item Provided taxonomy of 3D gestures which is convenient for analyzing and characterizing gestures in UAV controls
+\end{itemize}} \\
+\multicolumn{2}{c}{} \\
+
+\end{tabular}
+% \clearpage
+%----------------------------------------------------------------------------------------
+%	VOLUNTEER EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Volunteer Experience }
+\begin{tabular}{r|p{11cm}}
+
+\textsc{May} 2015& Fund-raising more than 150,000 NTD\\
+&\normalsize\textbf{Puyou elderly long-term care center}, Kaohsiung, Taiwan\\
+&\\
+
+\textsc{May} 2014& Charitino stuff, 1,000+ attendance and raising 100,000+ invoice \\
+&\normalsize\textbf{National Taiwan University} Taipei, Taiwan\\
+&\\
+
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	CAMPUS ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Campus Activities}
+\begin{tabular}{r|p{11cm}}
+
+& \href{https://hackntu.org}{HackNTU, dedicates to promote hacker spirits over the campus, NTU}\\
+\textsc{Mar 2015-Present}& \normalsize\textbf{Vice President}\\
+&\footnotesize{Co-hosted the biggest magenitude hackathon with 300+ millions NTD in Taiwan by leading a 100+ people preparatory team with core members for gathering resources from Taipei City government and companies, approaching technoloy communities(javascript Taiwan, Google), planning network and electricity service}\\
+% \multicolumn{2}{c}{} \\
+\newline \newline
+
+\textsc{Oct 2014-Feb 2015}& \normalsize\textbf{Director of Technology Development}\\
+&\footnotesize{Lead a 22-people team constructed the organization software infrastructures such as official website, recruitment landing page, hackathon app, online judge system, server maintainence.}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Sep 2013-Jun 2014}& Yang-Kuang Yeh-Tzu Student Society; Volunteer Social Welfare Assistance \\
+& \normalsize\textbf{Web Master}\\
+& \footnotesize{Provided Tutorial and Mentoring Assistance to Disadvantaged \& Native Formosan Children: Weekly visits to recipients at elementary schools.}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Sep 2011-May 2013}& Pop Dance Club\\
+&\normalsize\textbf{Core Member in Public Relation Division}\\
+&\footnotesize{Coordinated with school authorities, marketing and public relations agencies to arrange event
+design and promotional campaigns.}\\
+\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+% \section{Certificates}
+
+% \begin{tabular}{rl}	
+
+
+% \textsc{Jul} 2015 & {\textsc{TOEFL}}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}:  \quad (\textsc{R: ;L: ; S: ; W})\\
+% &\\
+
+% \textsc{Jun} 2015 & {\textsc{GRE}}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}: 313 \quad (\textsc{Q:170;V:143}) ; \textsc{awa}: 3.0 \\
+% &\\
+% \end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\begin{tabular}{rl}
+Programming Languages: & C/C++, JAVA, Python, UNIX shell scripting, HTML
+			\\&		   
+			Javascript, Node.js, Verilog, Assembly, MongoDB, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}\\
+			&\\
+
+Develop \& Prototyping Tools: & Microsoft Kinect, AR.drone, processing, Bootstrap,\\
+& Sketch, Adobe Illustrator, Adobe Photoshop\\
+&\\
+
+Languages: & \textsc{Mandarin Chinese(native)}, \textsc{English(fluent)}\\
+&\\
+
+\end{tabular}
+
+
+\end{document}
