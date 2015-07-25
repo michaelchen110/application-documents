@@ -23,7 +23,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[a4paper,10pt]{article} % Default font size and paper size
+\documentclass[a4paper,11pt]{article} % Default font size and paper size
 
 \usepackage{fontspec} % For loading fonts
 \defaultfontfeatures{Mapping=tex-text}
@@ -31,15 +31,6 @@
 
 \usepackage{fontawesome}
 \usepackage{balance}
-\usepackage{geometry}
- \geometry{
- a4paper,
- total={210mm,297mm},
- left=20mm,
- right=20mm,
- top=5mm,
- bottom=20mm,
- }
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
@@ -56,6 +47,15 @@
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around sections
 
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=20mm,
+ right=20mm,
+ top=15mm,
+ bottom=0mm,
+ }
 \begin{document}
 
 \pagestyle{empty} % Removes page numbering
@@ -65,7 +65,7 @@
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
-\vspace*{-2.5cm}
+% \vspace*{-2.5cm}
 \par{\centering{\Huge Pu-Chin \textsc{Chen}}\par} % Your name
 % \section{Personal Data}
 
@@ -73,7 +73,7 @@
 \centering{
 6F., No.15, Aly. 46, Ln. 553, Sec. 4, Zhongxiao E. Rd., Taipei City, Taiwan \\
 \href{mailto:puching110@gmail.com}{puching110@gmail.com}\hspace{5 mm} +(886) 921 448810 \hspace{10 mm} \href{https://github.com/michaelchen110}{\faGithub \hspace{1 mm} michaelchen110}}
-
+% \vspace*{1cm}
 
 % \textsc{Research Interests:} &  Machine Learning,  Human Computer Interaction, \\
 % & Statistics, UI/UX, Web development\\
@@ -84,18 +84,16 @@
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-
 \section{Education}
 
 \begin{tabular}{rl}	
 \textsc{June} 2015& \href{https://www.csie.ntu.edu.tw}{Undergraduate Degree in \textsc{}\textsc{Computer Science \& Information Engineering (CSIE)}} \\
-&\normalsize\textbf{\href{https://www.csie.ntu.edu.tw}{National Taiwan University (NTU)}}, Taiwan\hfill \normalsize \textsc{GPA}: 3.14/4.0 \\
-% \textsc{Last two years GPA}: 3.47/4.0\\
-&\\
+&\normalsize\textbf{\href{https://www.csie.ntu.edu.tw}{National Taiwan University (NTU)}}, Taiwan\hfill \normalsize \textsc{Overall GPA}: 3.16/4.0 \\
+& \hfill \normalsize\textsc{ Last 60 GPA}: 3.64/4.0\\
 
 \textsc{Aug} 2013& Summer Session\\
 &\normalsize\textbf{The University of California}, Berkeley\hfill \normalsize \textsc{GPA}: 3.57/4.0 \\
-&\\
+% &\\
 
 \end{tabular}
 
